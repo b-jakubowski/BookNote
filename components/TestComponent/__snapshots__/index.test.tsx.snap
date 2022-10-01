@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "red",
+      "height": 200,
+      "width": 200,
+    }
+  }
+>
+  <Text>
+    TestComponent
+  </Text>
+</View>
+`;
