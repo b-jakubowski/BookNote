@@ -1,5 +1,11 @@
+// prettier-ignore
 {
+  "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
   "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Completeness */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
     "jsx": "react-native",
     "lib": ["DOM", "ESNext"],
     "target": "ESNext",
@@ -15,14 +21,13 @@
     "noEmit": true,
     "strict": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@types/*": ["@types/*"],
-      "@assets/*": ["assets/*"]
-    },
+			"src/components/*": ["src/components/*"],
+			"src/screens/*": ["src/screens/*"],
+			"src/types/*": ["src/@types/*"],
+			"src/assets/*": ["assets/*"]
+		},
     "typeRoots": ["src/@types", "node_modules/@types"]
-  },
-  "extends": "expo/tsconfig.base"
+  }
 }
